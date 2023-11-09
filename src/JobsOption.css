@@ -1,0 +1,27 @@
+.jobsOption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    color: black;
+    cursor: pointer;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.jobsOption:hover{
+    background-color: whitesmoke;
+
+}
+
+.jobsOption__title{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.jobsOption__icon{
+    object-fit: contain;
+    justify-content: space-evenly;
+    height: 25px !important;
+    width: 25px !important;   
+}

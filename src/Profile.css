@@ -1,0 +1,36 @@
+.profile{
+    top: 80px;
+    position: sticky;
+    flex: 0.2;
+    border-radius: 10px;
+   
+    height: fit-content;
+}
+
+.profile__avatar{
+    margin-bottom: 10px;
+    margin-left: 20px;
+   
+}
+
+.profile__top{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+
+.profile__top > img {
+    margin-bottom: -20px;
+    width: 800px;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 20px;
+
+}

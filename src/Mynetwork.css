@@ -1,0 +1,90 @@
+.mynetwork{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: fit-content;
+    margin:40px;
+    
+}
+
+.mynetwork__left{
+    background-color: white;
+    flex: 0.3;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: sticky;
+}
+
+.mynetwork__icons{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+.mynetwork__icons > h1{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    font-weight: 450;
+}
+
+.mynetwork__right{
+    flex: 0.7;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.mynetwork__card{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.mynetwork__item > h2{
+    font-size: 600;
+    font-size: 12px;
+}
+
+.mynetwork__item > h4{
+    color: gray;
+    font-weight: 300;
+}
+
+.mynetwork__item > p{
+    color: gray;
+    font-weight: 200;
+}
+
+.mynetwork__item > button{
+    border-radius: 40px;
+    height: 30px;
+    width: 100px;
+    border-radius: 1px;
+    color: blue;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.mynetwork__item > img{
+    margin-bottom: -20px;
+    width: 140px;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+    gap: 20px;
+    margin: 20px;
+}
+
+.mynetwork__avatar{
+    margin-bottom: 10px;
+    margin-top: -40px;
+    margin-left: 40%;
+}

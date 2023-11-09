@@ -1,0 +1,88 @@
+.jobs{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: fit-content;
+    margin:40px;
+    
+}
+
+.jobs__left{
+    background-color: white;
+    flex: 0.4;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: sticky;
+}
+
+.jobs__icons{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+.jobs__icons > h1{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    font-weight: 450;
+}
+
+.jobs__right{
+    flex: 0.7;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.jobs__header{
+    display: flex;
+    gap: 400px;
+    padding: 10px;
+}
+
+.jobs__header > h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jobs__header > button{
+    border-radius: 40px;
+    cursor: pointer;
+    height: 20px;
+    width: 80px;
+    border: 1px;
+    background-color: white;
+}
+
+.jobs__header >button:hover{
+    background-color: whitesmoke;
+}
+
+.jobs__right > h2{
+    text-align: start;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;   
+}
+
+.jobs__right >p{
+    font-size: 12px;
+    font-weight: 200;
+    color: gray;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.jobs__right > button{
+    color: blue;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}

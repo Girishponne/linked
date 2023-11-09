@@ -1,0 +1,88 @@
+.notifications{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin:40px;
+}
+
+.notifications__left{
+    background-color: white;
+    flex: 0.2;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.notifications__left > h1{
+    font-size: 15px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.notifications__left > p{
+    color: blue;
+    cursor: pointer;
+}
+
+.notifications__middle{
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+    margin:20px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.notifications__main{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.notificatins__main > button{
+    border-radius: 40px;
+}
+
+.notifications > button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.notifications__feed{
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.notifications__feed > h1{
+    font-size: 15px;
+    color: black;
+    font-weight: 450;
+}
+
+.notifications__right{
+    background-color: white;
+    flex: 0.3;
+}
+
+
+.notifications__right > h1{
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.notifications__right > h1{
+    font-size: 15px;
+    font-weight: 400;
+}
