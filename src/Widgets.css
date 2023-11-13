@@ -7,6 +7,7 @@
     border:1px solid lightgray;
     height: fit-content;
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .widgets__header{
@@ -35,10 +36,6 @@
 .widgets__articleleft{
     color: #0177b7;
     margin-right: 5px;
-}
-
-.widgets__articleleft > MuiSvgIcon-root{
-    font-size: 15px;
 }
 
 .widgets__articleright{

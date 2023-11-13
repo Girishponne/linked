@@ -30,7 +30,7 @@ function Widgets() {
       {newsArticle("Tata launches a new car all over","driver less is now trending")}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Widgets;

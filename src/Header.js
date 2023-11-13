@@ -26,7 +26,7 @@ function Header() {
         <Link to='/Jobs'><HeaderOption Icon={BusinessCenterIcon} title='Jobs'/></Link>
         <Link to='/Messaging'><HeaderOption Icon={ChatIcon} title='Messaging' /></Link>
         <Link to='/Notifications'><HeaderOption Icon={NotificationsIcon} title='Notifications'/></Link>
-       <HeaderOption avatar="https://media.licdn.com/dms/image/D4D35AQFvXHXXZqYFzw/profile-framedphoto-shrink_100_100/0/1692803065825?e=1699696800&v=beta&t=W1uiDc0klTxzDQ-eZDzqWr5M5yxlY5KQtRAKNXmsULg" title='me'/>
+       <Link to='/Logout'> <HeaderOption avatar="https://media.licdn.com/dms/image/D4D35AQFvXHXXZqYFzw/profile-framedphoto-shrink_100_100/0/1692803065825?e=1699696800&v=beta&t=W1uiDc0klTxzDQ-eZDzqWr5M5yxlY5KQtRAKNXmsULg" title='me'/></Link>
 
       </div>
     </div>

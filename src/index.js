@@ -6,14 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-
-root.render(
+const root = document.getElementById('root');
+const rootContainer = createRoot(root);
+rootContainer.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+  <Provider store={store}>
+    <App />
+  </Provider>
   </React.StrictMode>
 );
 

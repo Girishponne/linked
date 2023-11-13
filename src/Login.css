@@ -1,42 +1,40 @@
 .login{
-    display: grid;
-    place-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Inter';
 }
 
-.login >img{
-    object-fit: contain;
-    height: 70px;
-    width: 500px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.login > form{
+.login__form{
     display: flex;
     flex-direction: column;
     
 }
 
-.login >form > input{
-    padding-left: 10px;
+.login__form > input{
+    min-width: 380px;
+    padding: 20px 0;
+    padding-left: 15px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    width: 350px;
-    height: 50px;
-    font-size: 20px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.24);
+    font-family: 'Inter';
+    font-size: 15px;
 }
 
-.login > form > button{
-    background-color: #0074b1;
-    border-radius: 5px;
-    width: 365px;
-    height: 50px;
+.login__form > button{
+    background: black;
+    padding: 17px 30px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Inter';
     color: #fff;
-    font-size: large;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .login__register{
@@ -44,7 +42,10 @@
     cursor: pointer;
 }
 
-.login > p{
-    margin-top: 20px;
+.login__form > h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
 
 }

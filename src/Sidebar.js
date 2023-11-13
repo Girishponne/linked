@@ -40,6 +40,6 @@ function Sidebar() {
         {recentItem('developer')}
       </div>
     </div>
-  )
-}
+  );
+};
 export default Sidebar;

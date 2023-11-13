@@ -8,7 +8,7 @@ function MynetworkOption({Icon,title,number}) {
       <p className='mynetworkOption__title'>{title}</p>
       <p className='mynetworkOption__para'>{number}</p>
     </div>
-  )
-}
+  );
+};
 
 export default MynetworkOption;

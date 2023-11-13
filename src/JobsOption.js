@@ -7,7 +7,7 @@ function JobsOption({Icon,title}) {
       {Icon && <Icon className='jobsOption__icon'/>}
       <p className='jobsOption__title'>{title}</p>
     </div>
-  )
-}
+  );
+};
 
 export default JobsOption;

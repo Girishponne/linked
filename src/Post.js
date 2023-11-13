@@ -32,7 +32,7 @@ function Post({name,description,message,photoUrl }) {
         color='gray' />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Post;

@@ -1,70 +1,56 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-import {auth} from './firebase';
+import React,{useState} from 'react';
+import './Login.css';
 import { useDispatch } from 'react-redux';
+import { login } from './features/userSlice';
 
-function Login() {
-  const [email,setEmail]=useState("");
-  const [password,setPassword]=useState("");
-  const [name,setName]=useState("");
-  const [profilePic, setProfilePic]=useState("");
+
+const Login = () => {
+  const [name,setName]=useState('');
+  const [email,setEmail]=useState('');
+  const [password,setPassword]=useState('');
+
   const dispatch=useDispatch();
 
-  const loginToApp=(e)=>{
+  const  handleSubmit=(e)=>{
     e.preventDefault();
+    
+    dispatch(
+      login({
+      name:name,
+      email:email,
+      password:password,
+      loggedIn: true,
+
+      })
+    );
   };
 
-
-    const register= ()=>{
-      if (!name){
-        return alert("please enter a full name!");
-      }
-      auth.createUserWithEmailAndPassword(email,password).then(
-        (userAuth)=>{
-          userAuth.user.updateProfile({
-            displayName:name,
-            photoUrl:profilePic,
-          })
-          .then(()=>{
-          dispatch(Login({
-              email:userAuth.user.email,
-              uid:userAuth.user.uid,
-              displayName:name,
-              photoUrl:profilePic,
-          })
-          )
-        })
-    }).catch((error)=>alert(error));
-    };
-    
   return (
     <div className='login'>
-      <img src="https://tse3.mm.bing.net/th?id=OIP.j-3vUMvS42mUHOHjpgAAWQHaEK&pid=Api&P=0&h=220" 
-      alt=""/>
-      <form>
-        <input 
-          value={name} onChange={(e)=>setName(e.target.value)} 
+     <form className='login__form'  onSubmit={(e)=>handleSubmit(e)}>
+      <h1>Login Here</h1>
+      <input 
+          value={name} 
+          onChange={(e)=>setName(e.target.value)} 
           placeholder='Full name (required if registering)'
-          type='text' />
+          type='name' />
         <input 
-          value={profilePic} onChange={(e)=>setProfilePic(e.target.value)} 
-          placeholder='Profile pic URL (optional)'
-          type='text' />
-        <input 
-           value={email} onChange={(e)=>setEmail(e.target.value)} 
+           value={email} 
+           onChange={(e)=>setEmail(e.target.value)} 
            placeholder='Email'
            type='email' />
         <input 
-          value={password} onChange={(e)=>setPassword(e.target.value)} 
+          value={password} 
+          onChange={(e)=>setPassword(e.target.value)} 
           placeholder='Password'
-         type='password' />
-        <button type="submit" onCanPlay={loginToApp}>Sign In</button>
-
-      </form>
-      <p>Not a member? {" "}
-        <span className='login__register' onClick={register}>Register Now</span> </p>
+          type='password' />
+        <button type="submit" >
+          Login
+        </button>
+      </form>      
     </div>
   )
 }
 
-export default Login;
+export default Login
+

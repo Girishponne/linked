@@ -17,6 +17,7 @@
     width: fit-content;
     height: fit-content;
 }
+
 .notifications__left > h1{
     font-size: 15px;
     font-weight: 500;
@@ -48,8 +49,14 @@
     gap: 30px;
 }
 
-.notificatins__main > button{
+.notifications__main > button{
     border-radius: 40px;
+    border: none;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
 }
 
 .notifications > button:hover{

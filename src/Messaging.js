@@ -26,7 +26,7 @@ function Messaging() {
             <p>you:hello..!</p>
             <hr/>
         </div>
-    </div>
+      </div>
     </div>
   );
 };

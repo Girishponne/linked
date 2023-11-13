@@ -3,13 +3,18 @@
     position: sticky;
     flex: 0.2;
     border-radius: 10px;
-   
+    padding: 10px;
     height: fit-content;
+    flex: 0.8;
+    border-bottom-left-radius:10px ;
 }
 
 .profile__avatar{
     margin-bottom: 10px;
     margin-left: 20px;
+    margin-bottom: 2px;
+    padding: 20px;
+    margin-bottom: -10px;
    
 }
 
@@ -33,4 +38,151 @@
     border-top-left-radius: 10px;
     margin: 20px;
 
+}
+
+.profile__top > h1{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.profile__top > p{
+    font-size: 15px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.profile__buttons > button{
+    border-radius: 30px;
+    gap: 20px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height:40px;
+    width: 140px;
+
+}
+
+.profile__top > h2{
+    font-size: 15px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.profile__below{
+    background-color: white;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    z-index: -1;
+   
+}
+
+.profile_below-skills li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+
+}
+
+.profile_below-skills > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+.profile_below-skills > form > button{
+    font-size: 15px;
+    border-radius: 30px;
+    height: 30px;
+    width: 120px;
+    border: none;
+    background-color: rgb(17, 128, 0);
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto";
+    
+}  
+
+.profile_below-skills > form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.profile_below-skills hr{
+    width:100%
+}
+
+.skills__button > li > button{
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+    height: 30px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+.profile__experience{
+    background-color: white;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.profile__header{
+    gap: 20px;
+}
+
+.profile__header > h1 {
+    font-size: 20px;
+    font-weight: 600;    
+}
+
+.profile__header > button{
+    height: 30px ;
+    width: 120px;
+    margin-top: 15px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+}
+
+.experience__button > li > button{
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+    height: 30px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+.profile__education{
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 10px;
+
+}
+
+.education__button > li  >button{
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+    height: 30px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
 }
