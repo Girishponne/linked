@@ -8,8 +8,10 @@ import { addSkill, deleteSkill, addExperience, deleteExperience, addEducation, d
 import Educationpopup from './Educationpopup.jsx';
 
 
+
 const Profile = () => {
-  const skills = useSelector((state) => state.skills);
+  const skills = useSelector((state) => state.skills); 
+  console.log(skills)
   const experiences = useSelector((state) => state.experiences);
   const educations = useSelector((state) => state.educations);
   const dispatch = useDispatch();
@@ -89,6 +91,7 @@ const Profile = () => {
   return (
     <div>
     <Header />
+    
     <div className='profile'>
       <div className='profile__top'>
         <img src='https://wallpapercave.com/wp/1IldCgG.jpg' alt='' />

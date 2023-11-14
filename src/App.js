@@ -22,13 +22,11 @@ function App() {
   const user=useSelector(selectUser);
 
   return (
-    <Provider store={store}>
       <div className="app">
-        {/* {user? <Logout/> : <Login/>} */}
         {user ? (
         <Router>
           <Routes>
-            {/* <Route path='/register' element={<Register />} /> */}
+            <Route path='/' element={<Login />} />
             <Route path='/home' element={<Lome/>} />
             <Route path='/mynetwork' element={<Mynetwork />} />
             <Route path='/Profile' element={<Profile/>} />
@@ -40,7 +38,6 @@ function App() {
         </Router>
         ):<Login/>}
       </div>
-      </Provider>
   );
 };
 
